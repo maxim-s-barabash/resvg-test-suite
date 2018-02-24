@@ -1,0 +1,1377 @@
+<!doctype html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en"> <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description" content="None">
+    <meta name="author" content="Reizner Evgeniy">
+    <!--<meta name="copyright" content="Maybe consider a Creative Commons license">-->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/coderay.css">
+    <link rel="stylesheet" href="css/asciidoctor.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/toc.js"></script>
+</head>
+<body>
+
+
+<!-- Nav Bar -->
+
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+            <h1>
+                <a href="">resvg test suite</a>
+            </h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-12 columns" role="content">
+
+        <table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 6.25%;">
+<col style="width: 62.5%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Feature</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">resvg</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Chrome</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Inkscape</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">rsvg</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">QtSvg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/struct.html">Document Structure</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">svg</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">g</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Opacity</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">defs</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">desc</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">title</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">symbol</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">use</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">image</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. JPEG support</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. PNG support</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. SVG support</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Embedded JPEG base64 support</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Embedded PNG base64 support</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">switch</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/styling.html">Styling</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">style</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/paths.html">Paths</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">path</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Numeric character references in <code>d</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. ArcTo parsing</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Invalid data processing</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/shapes.html">Basic Shapes</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">rect</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Simple case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. <code>x</code> attribute resolving</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. <code>y</code> attribute resolving</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Rounded rect</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. <code>rx</code> attribute resolving</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. <code>ry</code> attribute resolving</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7. Missing <code>width</code> attribute processing</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8. Missing <code>height</code> attribute processing</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9. Zero <code>width</code> attribute processing</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10. Zero <code>height</code> attribute processing</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11. Negative <code>width</code> attribute processing</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12. Negative <code>height</code> attribute processing</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13. Negative <code>rx</code> attribute resolving</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14. Negative <code>ry</code> attribute resolving</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15. Negative <code>rx</code> and <code>ry</code> attributes resolving</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16. Zero <code>rx</code> attribute resolving</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">17. Zero <code>ry</code> attribute resolving</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18. <code>rx</code> attribute clamping</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19. <code>ry</code> attribute clamping</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20. <code>rx</code> and <code>ry</code> attributes clamping order</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">circle</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Simple case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Missing <code>r</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Missing <code>cx</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Missing <code>cy</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Missing <code>cx</code> and <code>cy</code> attributes</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. Negative <code>r</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">ellipse</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Simple case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Missing <code>rx</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Missing <code>ry</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Missing <code>rx</code> and <code>ry</code> attributes</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Missing <code>cx</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. Missing <code>cy</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7. Missing <code>cx</code> and <code>cy</code> attributes</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8. Negative <code>rx</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9. Negative <code>ry</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10. Negative <code>rx</code> and <code>ry</code> attributes</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">line</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Simple case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. No coordinates</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. No <code>x1</code> coordinate</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. No <code>y1</code> coordinate</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. No <code>x2</code> coordinate</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. No <code>y2</code> coordinate</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7. No <code>x1</code> and <code>y1</code> coordinates</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8. No <code>x2</code> and <code>y2</code> coordinates</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">polyline</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Simple case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Not enough points</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Ignore odd points</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Stop processing on invalid data</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Missing <code>points</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">polygon</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Simple case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Not enough points</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Ignore odd points</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Stop processing on invalid data</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Missing <code>points</code> attribute</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/text.html">Text</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">text</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">tspan</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">tref</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">textPath</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">altGlyph</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">altGlyphDef</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">altGlyphItem</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">glyphRef</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/painting.html">Painting: Filling, Stroking and Marker Symbols</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">marker</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/color.html">Color</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">color-profile</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/pservers.html">Gradients and Patterns</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">linearGradient</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">radialGradient</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Focal point correction</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">stop</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">pattern</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/masking.html">Clipping, Masking and Compositing</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">clipPath</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">mask</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/filters.html">Filter Effects</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">filter</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feDistantLight</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">fePointLight</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feSpotLight</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feBlend</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feColorMatrix</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feComponentTransfer</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feComposite</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feConvolveMatrix</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feDiffuseLighting</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feDisplacementMap</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feFlood</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feGaussianBlur</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feImage</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feMerge</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feMorphology</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feOffset</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feSpecularLighting</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feTile</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feTurbulence</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feFuncR</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feFuncG</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feFuncB</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">feFuncA</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/interact.html">Interactivity</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">cursor</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/linking.html">Linking</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">a</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">view</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/script.html">Scripting</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">script</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/animate.html">Animation</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">animate</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">set</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">animateMotion</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">animateColor</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">animateTransform</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">mpath</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/fonts.html">Fonts</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">font</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">glyph</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">missing-glyph</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">hkern</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">vkern</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">font-face</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">font-face-src</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">font-face-uri</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">font-face-format</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">font-face-name</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/metadata.html">Metadata</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">metadata</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="7"><p class="tableblock"><a href="https://www.w3.org/TR/SVG/extend.html">Extensibility</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">foreignObject</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+
+    <!--<aside class="large-3 columns">
+
+        <h4>Posts</h4>
+        <ul id="posts" class="posts nav">
+            
+        </ul>
+
+        <div class="panel">
+            <h5>Featured</h5>
+
+            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon
+                nulla pork belly cupidatat meatloaf cow.</p>
+        </div>
+
+    </aside>-->
+
+    <!-- End Sidebar -->
+</div>
+
+<!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+
+<!--<footer class="row">
+    <div class="large-12 columns">
+        <hr>
+        <div class="row">
+            <div class="large-12 columns">
+                <p>Footer2</p>
+            </div>
+        </div>
+    </div>
+</footer>-->
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+$(document).foundation();
+var doc = document.documentElement;
+doc.setAttribute('data-useragent', navigator.userAgent);
+</script>
+</body>
+</html>
