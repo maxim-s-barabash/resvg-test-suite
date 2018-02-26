@@ -155,23 +155,14 @@
 <tr>
 <td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">image</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{part-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{part-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{part-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{part-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{part-box}</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1. JPEG support</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2. PNG support</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. External JPEG</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
@@ -180,7 +171,16 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3. SVG support</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. External PNG</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. External SVG</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
@@ -189,7 +189,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4. Embedded JPEG base64 support</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Embedded JPEG</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
@@ -198,10 +198,37 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5. Embedded PNG base64 support</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Embedded PNG</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. External SVGZ</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7. Embedded SVG</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8. Embedded SVGZ (UB)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 </tr>
