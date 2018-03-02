@@ -570,11 +570,128 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">font-size</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{part-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{part-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Simple case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Inheritance</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Percent value</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Nested percent value</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Named value</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. Mixed values</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7. Percent value without a parent</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8. Named value without a parent</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9. Zero size</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10. Zero size on parent (1)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11. Zero size on parent (2)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12. Zero size on parent (3)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13. Negative size (UB)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" colspan="7"></td>
