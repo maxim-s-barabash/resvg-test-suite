@@ -43,10 +43,11 @@
     <!-- Main Blog Content -->
     <div class="large-12 columns" role="content">
 
-        <h1>SVG 1.1 Full Support</h1>
+        <h1>SVG 1.1 Full Static Support</h1>
 <div id="toc" class="toc">
-<div id="toctitle">Table of Contents</div>
+<div id="toctitle"></div>
 <ul class="sectlevel1">
+<li><a href="#about">About</a></li>
 <li><a href="#elements">Elements</a></li>
 <li><a href="#attributes">Attributes</a>
 <ul class="sectlevel2">
@@ -57,40 +58,127 @@
 <li><a href="#tests">Tests</a></li>
 </ul>
 </div>
-<div id="preamble">
+<div class="sect1">
+<h2 id="about">About</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Legend</p>
+<p>This page contains results of the <a href="https://github.com/RazrFalcon/resvg-test-suite">resvg test suite</a>
+which is specifically designed for the <a href="https://github.com/RazrFalcon/resvg">resvg</a> library.</p>
 </div>
-<table class="tableblock frame-all grid-all spread">
+<div class="paragraph">
+<p>Unlike an official <a href="https://www.w3.org/Graphics/SVG/Test/20110816/">SVG test suite</a>
+this one is focused on edge-cases.</p>
+</div>
+<div class="paragraph">
+<p>Major differences:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>More edge-cases.</p>
+</li>
+<li>
+<p>One file - one test.<br>
+In the official test suite, one file can have a lot of tests.</p>
+</li>
+<li>
+<p>Only supported SVG subset.<br>
+<code>resvg</code> trying to support only the <a href="https://www.w3.org/TR/SVG11/feature#SVG-static">static</a> SVG subset.
+So this test suite doesn&#8217;t have any animation and scripting tests.</p>
+</li>
+<li>
+<p>No embedded fonts.<br>
+We don&#8217;t plan to support them. So there are no tests for now.</p>
+</li>
+<li>
+<p>No raster images as references.<br>
+We are using <a href="https://github.com/RazrFalcon/resvg-test-suite/tree/master/tools/vdiff">vdiff</a> tool to check that test is passed.</p>
+</li>
+<li>
+<p>No percent values in <code>width</code> and <code>height</code>.<br>
+Isn&#8217;t supported that good.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><br></p>
+</div>
+<div class="paragraph">
+<p>We are testing/comparing <code>resvg</code> with Chrome, Inkscape, librsvg and QtSvg for a reason.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Chrome has the best SVG support and used as a reference implementation.</p>
+</li>
+<li>
+<p>Inkscape is an obvious choice on Linux.</p>
+</li>
+<li>
+<p>librsvg is the main <code>resvg</code> rival. Used in GNOME, XFCE for SVG rendering.
+The goal is to replace <code>librsvg</code> with <code>resvg</code>.</p>
+</li>
+<li>
+<p>QtSvg is used by all the Qt applications and KDE. We plan to replace it as well.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><br>
+<br></p>
+</div>
+<div class="paragraph">
+<p>Legend:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 40%;">
 <colgroup>
-<col style="width: 4.7619%;">
-<col style="width: 95.2381%;">
+<col style="width: 12.5%;">
+<col style="width: 37.5%;">
+<col style="width: 12.5%;">
+<col style="width: 37.5%;">
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Passed</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Failed</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Partial</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unknown</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Failed</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/crashed.svg" alt="20" width="20" title="Crashed"></span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Crashed</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Partial</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/out-of-scope.svg" alt="20" width="20" title="Out of scope"></span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Out of scope</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Rows like this indicate that such element/attribute is planned but not yet implemented.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 6.25%;">
+<col style="width: 62.5%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">name</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -5114,10 +5202,16 @@
 <h2 id="tests">Tests</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Test files has a following naming convention: <code>%type%</code>-<code>%element name%</code>-<code>%consecutive number%</code>.svg</p>
+<p>Test files can be found <a href="https://github.com/RazrFalcon/resvg-test-suite/tree/master/svg">here</a>.</p>
 </div>
 <div class="paragraph">
-<p>Last update: 2018-02-23</p>
+<p>Naming convention: <code>type</code>-<code>name</code>-<code>###</code>.svg</p>
+</div>
+<div class="paragraph">
+<p><code>type</code> can be either <code>a</code>(attribute) or <code>e</code>(element).</p>
+</div>
+<div class="paragraph">
+<p>For example the <em>polyline - 3. Ignore odd points</em> will lead to <code>e-polyline-003.svg</code>.</p>
 </div>
 </div>
 </div>
