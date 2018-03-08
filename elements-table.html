@@ -2953,11 +2953,236 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">clipPath</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{part-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{part-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{part-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">{unk-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Simple case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. <code>stroke</code> has no effect</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. <code>fill</code> has no effect</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. <code>opacity</code> has no effect</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. clipPathUnits=objectBoundingBox</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. <code>clip-path</code> with <code>transform</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7. <code>clip-path</code> with <code>transform</code> on text</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8. <code>transform</code> on <code>clipPath</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9. Clipping with text</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10. Clipping with complex text (1)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11. Clipping with complex text (2)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12. Clipping with complex text and <code>clip-rule</code> (UB)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13. clip-rule=evenodd</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14. Mixed <code>clip-rule</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15. Multiple children</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16. One invalid child</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">17. Overlapped shapes with <code>evenodd</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18. <code>clip-rule</code> from parent node</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19. <code>clip-path</code> on child</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20. <code>clip-path</code> on self</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21. Nested <code>clip-path</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22. No children</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">23. Invalid child</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24. Invisible child (1)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25. Invisible child (2)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" colspan="7"></td>
