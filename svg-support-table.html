@@ -120,6 +120,12 @@ And we support only a minimal CSS subset.</p>
 We assume that underlying PNG and JPEG libraries are good.</p>
 </li>
 <li>
+<p><code>a</code> element. We treating it as <code>g</code>.</p>
+</li>
+<li>
+<p>Pointer events.</p>
+</li>
+<li>
 <p>Animations.</p>
 </li>
 <li>
@@ -308,6 +314,16 @@ The goal is to replace <code>librsvg</code> with <code>resvg</code>.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not UTF-8 encoding</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
@@ -3156,7 +3172,7 @@ The goal is to replace <code>librsvg</code> with <code>resvg</code>.</p>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>stop-color</code> with <code>inherit</code> (3)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>stop-color</code> with <code>inherit</code> (4)</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
@@ -3968,11 +3984,61 @@ The goal is to replace <code>librsvg</code> with <code>resvg</code>.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><a id="e-a"></a> a</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On shape</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On text</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inside text</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inside <code>tspan</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On <code>tspan</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" colspan="8"></td>
@@ -4377,11 +4443,21 @@ The goal is to replace <code>librsvg</code> with <code>resvg</code>.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><a id="a-display"></a> display</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>none</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" colspan="8"></td>
@@ -4729,7 +4805,7 @@ The goal is to replace <code>librsvg</code> with <code>resvg</code>.</p>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Radial gradient on shape</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Radial gradient on text</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
@@ -4739,7 +4815,7 @@ The goal is to replace <code>librsvg</code> with <code>resvg</code>.</p>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">33</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Pattern on shape</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pattern on text</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
@@ -6333,11 +6409,31 @@ The goal is to replace <code>librsvg</code> with <code>resvg</code>.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><a id="a-visibility"></a> visibility</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/unknown.svg" alt="20" width="20" title="Unknown"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Simple case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On <code>g</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" colspan="8"></td>
@@ -6390,6 +6486,37 @@ The goal is to replace <code>librsvg</code> with <code>resvg</code>.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inkscape</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rsvg</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">QtSvg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><a id="a-style"></a> style</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Simple case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comments</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="8"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><a id="a-transform"></a> transform</p></td>
@@ -6578,37 +6705,6 @@ The goal is to replace <code>librsvg</code> with <code>resvg</code>.</p>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top" colspan="8"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><a id="a-style"></a> style</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/partial.svg" alt="20" width="20" title="Partial"></span></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Simple case</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Comments</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/passed.svg" alt="20" width="20" title="Passed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/failed.svg" alt="20" width="20" title="Failed"></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" colspan="8"></td>
