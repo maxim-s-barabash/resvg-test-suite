@@ -79,7 +79,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Custom namespace (1)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Explicit <code>svg</code> namespace</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
@@ -89,7 +89,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Custom namespace (2)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>xmlns</code> validation</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
@@ -99,7 +99,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Custom namespace (3)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mixed namespaces</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
@@ -109,7 +109,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ENTITY reference (1)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element via ENTITY reference</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
@@ -119,7 +119,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ENTITY reference (2)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attribute value via ENTITY reference</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
@@ -129,7 +129,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty (no children)</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
@@ -141,6 +141,106 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Not UTF-8 encoding</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio=none</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio=xMinYMin</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio=xMidYMid</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio=xMaxYMax</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio='xMinYMin slice'</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio='xMidYMid slice'</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio='xMaxYMax slice'</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>preserveAspectRatio</code> with <code>viewBox</code> not at zero pos</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>viewBox</code> not at zero pos</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">17</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Proportional <code>viewBox</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
@@ -512,6 +612,76 @@
 <td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio=none</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio='xMinYMin meet'</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio='xMidYMid meet'</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio='xMaxYMax meet'</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio='xMinYMin slice'</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio='xMidYMid slice'</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preserveAspectRatio='xMaxYMax slice'</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{ok-box}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{fail-box}</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" colspan="8"></td>
